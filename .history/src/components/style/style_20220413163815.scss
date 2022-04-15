@@ -1,0 +1,114 @@
+$DarkBlue: hsl(209, 23%, 22%); // (Dark Mode Elements)
+$VeryDarkBlue: hsl(207, 26%, 17%); //(Dark Mode Background)
+$VeryDark: hsl(200, 15%, 8%); //(Light Mode Text)
+$DarkGray: hsl(0, 0%, 52%); //(Light Mode Input)
+$VeryLightGray: hsl(0, 0%, 98%); // (Light Mode Background)
+$White: hsl(0, 0%, 100%); //(Dark Mode Text & Light Mode Elements)
+@mixin theme ($bg, $element, $text) {
+    background-color: $bg;
+    color: $text;
+    .navbar{
+        background-color: $element;
+        //bottttom box shadow
+    }
+    a:-webkit-any-link{
+        color: $text;
+    }
+    .home{
+        form{
+            div{
+                input{
+                    background-color: $element;
+                }
+                background-color: $element;
+            }
+            select{
+                background-color: $element;
+                color: $text;
+            }
+        }
+        .all-flags{
+            .a-flag{
+                background-color: $element;
+            }
+        }
+    }
+}
+.dark{
+    @include theme($VeryDarkBlue, $DarkBlue , $White)
+}
+.light{
+    @include theme($VeryLightGray, $White , $VeryDark )
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    //color at the bottom? 
+    //also this part is diffrent from background
+}
+.navbar::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+a:-webkit-any-link {
+    text-decoration: none;
+} 
+.home{
+    form{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        input, select{
+            outline: 0;
+        }
+        div{
+            input{
+                border: 0;
+            }
+                padding: 7px 4px;
+        }
+        select{
+            width: 130px; 
+            border: 0;
+            padding: 7px 4px;
+        }
+    }
+    .all-flags{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 15px;
+        .a-flag{
+            box-shadow: 0px 0px 4px 0.3px rgb(0, 170, 255);//set
+            margin: 0 15px 35px;
+            //padding: 10px;
+            width: 280px;
+            height: 330px;
+            border-radius: 2px;
+            //background-color: $White; //set!!!!!!
+            .flag-box{
+                height: 170px;
+                width: 100%;
+                img{
+                    width: -webkit-fill-available;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            .text{
+                padding: 0 6px;
+                span{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+        }
+    }//0px 0px 4px 0.3px hsl(200deg 15% 8%) box shadow
+}
