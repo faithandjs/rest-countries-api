@@ -27,9 +27,9 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 
 ### Links
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here](https://fe-rest-countries-api.netlify.app/)
+
+- Solution URL: [Solution](https://t.co/0AGXMIkP36)
+- Live Site URL: [Live](https://fe-rest-countries-api.netlify.app/)
 
 ## My process
 
