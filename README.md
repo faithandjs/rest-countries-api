@@ -21,11 +21,11 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 ### Screenshot
 
-![](./screenshot.jpg)//addscreenshots
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 ### Links
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
@@ -36,22 +36,20 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - Semantic HTML5 markup
 - SCSS 
 - Bootstrap
-- CSS Grid///////
+- CSS Grid  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Large-screen-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Typescript]() - JS superset
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+In ### SASS:
 ```scss
 .proud-of-this-css {
   /*I was able to figure out how to create a light mode/ dark mode effect in css*/
 }
 ```
+In ### Typescript
 ```ts
 const proudOfThisFunc = () => {
   console.log('i wrote the whole project in typescript and that was a first for me')
@@ -67,12 +65,10 @@ I want to do more projects with Typescript and APIs.
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://faithh.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/faithandjs)
+- Website - [Meet Faith](https://faithh.netlify.app/)
+- Frontend Mentor - [@faithandjs](https://www.frontendmentor.io/profile/faithandjs)
 
 ## Acknowledgments
 
