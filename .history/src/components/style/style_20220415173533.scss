@@ -1,0 +1,205 @@
+$DarkBlue: hsl(209, 23%, 22%); // (Dark Mode Elements)
+$VeryDarkBlue: hsl(207, 26%, 17%); //(Dark Mode Background)
+$VeryDark: hsl(200, 15%, 8%); //(Light Mode Text)
+$DarkGray: hsl(0, 0%, 52%); //(Light Mode Input)
+$VeryLightGray: hsl(0, 0%, 98%); // (Light Mode Background)
+$White: hsl(0, 0%, 100%); //(Dark Mode Text & Light Mode Elements)
+$shadow: 0px 0px 1px 0.2px ;
+@mixin theme ($bg, $element, $text, $shadowColor) {
+    background: $bg;
+    color: $text;
+    .navbar{
+        background-color: $element;
+    }
+    a:-webkit-any-link{
+        color: $text;
+    }
+    .details{
+        .border div, .back{
+            background-color: $element;
+        }
+        .border div{
+            box-shadow: 0px 0px 3px 0.1px $shadowColor;
+        }
+        .back{
+            box-shadow: 0px 0px 6px 0.2px $shadowColor;
+        }
+    }
+    .home{
+        form{
+            div{
+                box-shadow: $shadow $shadowColor;
+                input{
+                    background-color: $element;
+                    color: $text;
+                }
+                background-color: $element;
+            }
+            select{
+                box-shadow: $shadow $shadowColor;
+                background-color: $element;
+                color: $text;
+            }
+        }
+        .all-flags{
+            .a-flag{
+                background-color: $element;
+                box-shadow: $shadow $shadowColor;
+            }
+        }
+    }
+
+}
+.dark{
+    @include theme($VeryDarkBlue, $DarkBlue , $White, $VeryDark)
+}
+.light{
+    @include theme($VeryLightGray, $White , $VeryDark, $DarkGray )
+}
+.app{
+    background-attachment: fixed;
+    width: 100%;
+    //overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    align-items: baseline;
+    img{
+        width: 20px;
+        padding: 0 13px 0 1px ;
+        position: relative;
+        top: 4px;
+    }
+    //color at the bottom? 
+    //also this part is diffrent from background
+}
+.details {
+    margin: 0 25px 25px;
+    .back{
+        width: 150px;
+        height: 40px;
+        margin: 35px 0 45px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            transform: rotate(180deg) scale(0.15);
+        }
+        span{
+            position: relative;
+            left: -50px;
+        }
+        img, span{
+            padding: 0 4px;
+        }
+    }
+    .content{
+        .flag{
+            img{
+                width: 500px;
+                padding-right: 150px;
+            }
+        }
+        display: flex;
+        align-items: center;
+        .moreContent{
+            span{
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .name{
+                font-weight: bold;
+            }
+            .lists{
+                display: flex;
+                ul{
+                    list-style-type: none;
+                }
+            }
+            .border{
+                display: flex;
+                align-items: baseline;
+                div{
+                    //display: flex;
+                    //justify-content: ;
+                    min-width: 100px;
+                    margin: 0 10px;
+                    padding: 7px 12px;
+                    text-align: center;
+                    //border: 1px solid red;
+                    //bgcolor
+                }
+            }
+        }
+    }
+}
+a:-webkit-any-link {
+    text-decoration: none;
+} 
+.mode-box:hover, select:hover, .border div:hover{
+    cursor: pointer;
+ }
+.home{
+    form{
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        input, select{
+            outline: 0;
+        }
+        div{
+            width: 300px;
+            padding: 15px 7px;
+            display: flex;
+            border-radius: 4px;
+            img{
+                width: 17px;
+                padding: 0 10px;
+            }
+            input{
+                border: 0;
+            }
+        }
+        select{
+            border-radius: 4px;
+            width: 130px; 
+            border: 0;
+            padding: 15px 7px;
+        }
+    }
+    .all-flags{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 15px;
+        .a-flag{
+            margin: 0 15px 35px;
+            //padding: 10px;
+            width: 280px;
+            height: 330px;
+            border-radius: 7px;
+            //background-color: $White; //set!!!!!!
+            .flag-box{
+                height: 170px;
+                width: 100%;
+                img{
+                    width: -webkit-fill-available;
+                    height: 100%;
+                    object-fit: fill;
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                }
+            }
+            .text{
+                padding: 0 6px;
+                span{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+        }
+    }//0px 0px 4px 0.3px hsl(200deg 15% 8%) box shadow
+}
