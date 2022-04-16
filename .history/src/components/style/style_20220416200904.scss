@@ -87,7 +87,7 @@ $shadow: 0px 0px 1px 0.2px ;
     .back{
         width: 150px;
         height: 40px;
-        margin: 35px 0 45px 20px;
+        margin: 35px 0 45px 0;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -104,7 +104,6 @@ $shadow: 0px 0px 1px 0.2px ;
         }
     }
     .content{
-        margin: 35px 0 45px 20px;
         display: flex;
         .flag{
             img{
@@ -191,7 +190,7 @@ a:-webkit-any-link, a {
             width: 130px; 
             border: 0;
             padding: 12px 7px;
-            height: 46px;
+            height: 50px;
         }
     }
         margin: 0 25px;
@@ -200,7 +199,7 @@ a:-webkit-any-link, a {
         flex-wrap: wrap;
         justify-content: space-around;
         .a-flag{
-            margin: 0 20px 45px;
+            margin: 0 20px 35px;
             width: 280px;
             height: 370px;
             border-radius: 7px;
@@ -249,11 +248,6 @@ a:-webkit-any-link, a {
             }
         }
     }
-    .back, .content{
-        margin: 35px 0 45px 30px !important;
-        padding: 0 !important;
-    }
-
 }
 @media screen and (max-width: 686px) {
     form{
@@ -262,16 +256,5 @@ a:-webkit-any-link, a {
             width: 100% !important;
             margin-bottom: 25px;
         }
-    }
-    .navbar{
-        div{
-            font-size: 14px;
-        }
-    }
-    .back{
-        display: none !important;
-    }
-    .content{
-        margin-top: 40px !important;
     }
 }

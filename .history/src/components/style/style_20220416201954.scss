@@ -87,7 +87,7 @@ $shadow: 0px 0px 1px 0.2px ;
     .back{
         width: 150px;
         height: 40px;
-        margin: 35px 0 45px 20px;
+        margin: 35px 0 45px 30px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -104,7 +104,6 @@ $shadow: 0px 0px 1px 0.2px ;
         }
     }
     .content{
-        margin: 35px 0 45px 20px;
         display: flex;
         .flag{
             img{
@@ -249,11 +248,6 @@ a:-webkit-any-link, a {
             }
         }
     }
-    .back, .content{
-        margin: 35px 0 45px 30px !important;
-        padding: 0 !important;
-    }
-
 }
 @media screen and (max-width: 686px) {
     form{
@@ -267,11 +261,5 @@ a:-webkit-any-link, a {
         div{
             font-size: 14px;
         }
-    }
-    .back{
-        display: none !important;
-    }
-    .content{
-        margin-top: 40px !important;
     }
 }

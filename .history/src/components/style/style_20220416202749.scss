@@ -249,11 +249,9 @@ a:-webkit-any-link, a {
             }
         }
     }
-    .back, .content{
-        margin: 35px 0 45px 30px !important;
-        padding: 0 !important;
+    .back{
+        margin: 35px 0 45px 30px;
     }
-
 }
 @media screen and (max-width: 686px) {
     form{
