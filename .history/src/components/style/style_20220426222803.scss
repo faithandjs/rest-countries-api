@@ -41,7 +41,6 @@ $shadow: 0px 0px 1px 0.2px;
       }
       .select {
         box-shadow: $shadow $shadowColor;
-        background-color: $element;
         select {
           background-color: $element;
           color: $text;
@@ -168,7 +167,7 @@ a {
   text-decoration: none;
 }
 .mode-box:hover,
-.select:hover,
+select:hover,
 .border div:hover {
   cursor: pointer;
 }
@@ -183,14 +182,20 @@ a {
       outline: 0;
     }
     .select {
-      padding: 0 6px;
-      border-radius: 4px;
-      select {
-        width: 130px;
-        border: 0;
-        padding: 12px 7px;
-        height: 46px;
-      }
+      /*   select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 5px;
+        border: 1px solid #dfdfdf;
+        border-radius: 2px;
+        margin-right: 2rem;
+        padding: 1rem;
+        padding-right: 2rem;
+      }*/
     }
     .input-img {
       height: 40px;
@@ -212,6 +217,13 @@ a {
         border: 0;
         // height: 20px;
       }
+    }
+    select {
+      border-radius: 4px;
+      width: 130px;
+      border: 0;
+      padding: 12px 7px;
+      height: 46px;
     }
   }
   margin: 0 25px;

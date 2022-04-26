@@ -108,17 +108,15 @@ function Home({ children }: any): JSX.Element {
             placeholder="Search for a country..."
           />
         </div>
-        <div className="select">
-          <select name="region" onChange={() => selectRegion()}>
-            {/* path /region/name */}
-            <option value="all">Filter by Region</option>
-            <option value="Africa">Africa</option>
-            <option value="Americas">Americas</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="Oceania">Oceania</option>
-          </select>
-        </div>
+        <select name="region" onChange={() => selectRegion()}>
+          {/* path /region/name */}
+          <option value="all">Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
       </form>
 
       <div className="all-flags">
