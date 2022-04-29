@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style/style.scss";
-import searchImg from "./images/search.png";
+import searchImg from "./images/search.svg";
 import { Wrapper } from "./parent";
 import { arrItem, items, contextType } from "./type";
 
@@ -97,47 +97,7 @@ function Home({ children }: any): JSX.Element {
       <form onSubmit={(e) => e.preventDefault()}>
         <div className="input-img">
           <div className="img-box">
-          {  /*<img src={searchImg} alt="search icon" />
-          
-          */}
-          <svg
-          
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 184 161"
-  >
-  <g
-      id="imagebot_2"
-    >
-    <g
-        id="imagebot_3"
-        transform="translate(174.67 152.52) matrix(.90792 0 0 .90792 -427.96 -463.36)"
-      >
-      <g
-          id="imagebot_4"
-          stroke="#808080"
-          stroke-linecap="round"
-          fill="none"
-        >
-        <path
-            id="imagebot_6"
-            stroke-linejoin="round"
-            stroke-width="10.63"
-            d="m443.16 414.45c0 36.1-29.27 65.36-65.36 65.36-36.1 0-65.36-29.26-65.36-65.36s29.26-65.36 65.36-65.36c36.09 0 65.36 29.26 65.36 65.36z"
-        />
-        <path
-            id="imagebot_5"
-            stroke-width="21.26"
-            d="m428.3 464.45l42.43 38.39"
-        />
-      </g
-      >
-    </g
-    >
-    <title
-      >Layer 1</title
-    >
-  </g
-  ></svg>
+            <img src={searchImg} alt="search icon" />
           </div>
           <input
             value={inputValue}

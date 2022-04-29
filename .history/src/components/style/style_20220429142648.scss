@@ -166,9 +166,8 @@ $shadow: 0px 0px 1px 0.2px;
     width: 100%;
 }*/
 a:-webkit-any-link,
-a, h2, .text div {
+a {
   text-decoration: none;
-  
 }
 .mode-box:hover,
 .select:hover,
@@ -193,7 +192,7 @@ a, h2, .text div {
       border-radius: 4px;
       width: max-content;
       select {
-        width: 180px;
+        width: 130px;
         border: 0;
         padding: 12px 7px;
         height: 46px;
@@ -201,8 +200,8 @@ a, h2, .text div {
     }
     .input-img {
       height: 46px;
-      width: 393px;
-      padding-left: 7px;
+      width: 400px;
+      // padding: 12px 7px;
       display: flex;
       border-radius: 4px; 
       svg{
