@@ -1,4 +1,4 @@
-import React, { createContext, useRef, useState, useEffect, useMemo, Props, ClassAttributes } from 'react';
+import React, { createContext, useRef, useState, useEffect, useMemo, ClassAttributes } from 'react';
 import arrowWhite from './images/next.png'
 import arrowBlack from './images/next (1).png'
 import mode from './images/sleep-mode (1).png'

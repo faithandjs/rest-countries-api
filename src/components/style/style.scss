@@ -316,8 +316,18 @@ a, h2, .text div {
   .home {
     .all-flags {
       .a-flag {
-        width: 240px;
-        margin: 0 7px 45px;
+        width: 220px;
+        margin: 0 15px 45px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 686px) {
+  .home {
+    .all-flags {
+      .a-flag {
+        width: 280px;
+        min-width: 90%;
       }
     }
   }
